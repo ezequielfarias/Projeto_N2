@@ -1,8 +1,8 @@
 const { select, input, checkbox } = require('@inquirer/prompts')
 
 let meta = {
-    value: 'Tomar 3L de água por dia',
-    checked: false,
+    value: 'Programação da Semana',
+    checked: true,
 }
 
 let metas = [ meta ]
