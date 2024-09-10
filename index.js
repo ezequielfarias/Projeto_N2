@@ -1,13 +1,31 @@
 const{select} = require('@inquirer/prompts')
-const start = ()=>{
+
+const start = async ()=>{
   while(true){
-  let opcao= "cadastrar"
+    const opcao = await select({
+      message:"Menu",
+      choices:[
+        {
+          name: "cadastrar Câmera",
+          value: "Cadastrar"
+        },
+        {
+          name: "Listar Câmeras",
+          value: "Listar"
+        },
+        {
+          name: "sair",
+          value: "sair"
+        },
+      ]
+    })
+
   switch (opcao){
-      case "Cadastrar":
+      case "Cadastrar Câmera":
       console.log("Vamos cadastrar")
       break
 
-      case "Listar":
+      case "Listar Câmeras":
           console.log("Vamos listar")
           break
           case "sair":
