@@ -1,4 +1,13 @@
-const{select} = require('@inquirer/prompts')
+const{select, input} = require('@inquirer/prompts')
+const CadastrarCamera = async () =>{
+  const camera = await input({message:" Digite a descrição da Câmera"})
+
+    if (camera.length == 0){
+      console.log("A descrição não pode ser vazia!")
+      return 
+    }
+}
+
 
 const start = async ()=>{
   while(true){
@@ -6,7 +15,7 @@ const start = async ()=>{
       message:"MENU",
       choices:[
         {
-          name: "cadastrar Câmera",
+          name: "Cadastrar Câmera",
           value: "Cadastrar"
         },
         {
@@ -22,6 +31,7 @@ const start = async ()=>{
 
   switch (opcao){
       case "Cadastrar Câmera":
+        await CadastrarCamera()
       console.log("Vamos cadastrar")
       break
 
