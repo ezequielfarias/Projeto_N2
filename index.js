@@ -1,11 +1,20 @@
 const start = ()=>{
-  let count = 0
-while(count <= 10){
-console.log(count)
-count = count +1
+  while(true){
+  let opcao= "cadastrar"
+  switch (opcao){
+      case "Cadastrar":
+      console.log("Vamos cadastrar")
+      break
 
-
+      case "Listar":
+          console.log("Vamos listar")
+          break
+          case "sair":
+            return
 }
+
+
+  }
 }
 
 start()
