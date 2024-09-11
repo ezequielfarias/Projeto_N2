@@ -1,10 +1,14 @@
 [
   {
-    "value": "banho",
-    "checked": false
+    "value": "tomar café",
+    "checked": true
   },
   {
-    "value": "tomar café",
+    "value": "Aprender TypeScript",
+    "checked": true
+  },
+  {
+    "value": "toma banho",
     "checked": false
   }
 ]
