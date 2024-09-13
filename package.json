@@ -1,5 +1,18 @@
 {
+  "name": "main.js",
+  "version": "1.0.0",
+  "description": "- Comentários\r - Declaração de variáveis (const, let)\r - Operadores (atribuição, concatenação, matemáticos, lógicos )\r - Tipos de dados (string, number, boolean)\r - Estrutura de dados (functions, object, array)\r - Controle de fluxo (if/else)\r - Estrutura de repetição (for, while)",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ezequiel",
+  "license": "ISC",
   "dependencies": {
     "inquirer": "^10.2.2"
+  },
+  "devDependencies": {
+    "electron": "^32.1.0"
   }
 }
